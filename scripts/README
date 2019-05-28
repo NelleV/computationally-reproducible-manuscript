@@ -1,2 +1,6 @@
 Folder containing most of the scripts, and, in this particular case, the
 manuscript as an Rmd file.
+
+Here is the structure.
+
+- `simulating_data` contains a script to simulate data
