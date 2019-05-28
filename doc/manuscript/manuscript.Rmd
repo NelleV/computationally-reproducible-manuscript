@@ -1,0 +1,59 @@
+---
+title: "A computational reproducible manuscript"
+author:
+  - name: "Nelle Varoquaux"
+    affiliation: a
+    email: "nelle.varoquaux@gmail.com"
+address:
+  - code: a
+    address: "University of California, Berkeley"
+#csl: trendsjournals.csl
+csl: ecology-letters.csl
+bibliography: refs.bib
+output: 
+  rticles::elsevier_article:
+    keep_tex: true
+  word_document: default
+layout:  3p # review = doublespace, 3p = singlespace, 5p = two-column
+preamble: |
+  \newcommand{\ud}{\mathrm{d}}
+  \usepackage[nomarkers]{endfloat}
+  \journal{Ecology Letters}
+  \linenumbers
+  \usepackage{setspace}
+  \doublespacing
+abstract: |
+  # Archive statement:
+  All data (simulated data and code) is made available on GitHub. If accepted, it will be archived with provided DOI in an appropriate scientific data repositoriy.
+  
+  # Keywords: stochasticity, demographic noise, environmental noise, colored noise, quasi-cycles, tipping points
+
+  # Abstract
+    
+   Something amazing [@noble:quick].     
+  \newpage 
+ 
+---
+
+<!--
+keywords:
+  - stochasticity
+  - demographic noise
+  - environmental noise
+  - colored noise
+  - quasi-cycles
+  - tipping points
+-->
+
+
+```{r libraries, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(
+    echo= FALSE,
+    message=FALSE,
+    warning=FALSE,
+    dev="cairo_pdf",
+    fig.width=7,
+    fig.height=3.5,
+    cache=TRUE)
+
+```
