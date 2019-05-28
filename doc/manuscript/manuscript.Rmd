@@ -26,7 +26,7 @@ abstract: |
   # Archive statement:
   All data (simulated data and code) is made available on GitHub. If accepted, it will be archived with provided DOI in an appropriate scientific data repositoriy.
   
-  # Keywords: stochasticity, demographic noise, environmental noise, colored noise, quasi-cycles, tipping points
+  # Keywords: Reproducibility, manuscript 
 
   # Abstract
     
@@ -57,3 +57,60 @@ knitr::opts_chunk$set(
     cache=TRUE)
 
 ```
+
+# Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+in culpa qui officia deserunt mollit anim id est laborum
+
+# Methods
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+in culpa qui officia deserunt mollit anim id est laborum
+
+| Name   | Formula   |     |
+|------- | --------- |--- |
+| timely | $\text{lfc}(t)$  | Function of time |
+| abs_sum  | $\sum_t \|lfc(t)\|$  | Always positive |
+| max  | $\max_t \|lfc(t)\|$  | Always positive  |
+| min  | $\min_t \|lfc(t)\|$  | Always positive |
+
+
+```{r load_data, echo=FALSE, message=FALSE, warning=FALSE}
+# Here, I simply load the data previously generated
+simulated_data = read.table("../../scripts/simulating_data/results/data.csv") 
+centroids = read.table("../../scripts/simulating_data/results/centroids.csv")
+labels = read.table("../../scripts/simulating_data/results/labels.csv")
+labels = as.factor(labels$x)
+```
+
+**Our data set is comprised of `r dim(simulated_data)[1]`  samples in 
+`r dim(simulated_data)[2]` dimensions.**
+
+<!-- Figure 1: simulated data -->
+```{r plot_data, echo=FALSE, fig.width=4, fig.height=4}
+colors = c("#e94f37", "#393e41", "#3f88c5")
+names(colors) = levels(labels) 
+plot(simulated_data[, 1], simulated_data[, 2], col=colors[labels], pch=20,
+     xlab="X", ylab="Y", cex.axis=.6, cex.lab=.7)
+```
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+in culpa qui officia deserunt mollit anim id est laborum
+
+# Discussion
+
+
+# References
