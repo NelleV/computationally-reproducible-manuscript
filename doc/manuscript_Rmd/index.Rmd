@@ -1,0 +1,11 @@
+---
+title: "A computationally reproducible manuscript"
+output:
+  html_document:
+    toc: true
+---
+
+The following manuscripts were automatically build on `r Sys.time()`.
+
+- [Rmd based manuscript](manuscript.pdf)
+
