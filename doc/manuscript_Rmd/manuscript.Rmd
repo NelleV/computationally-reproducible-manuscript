@@ -7,21 +7,12 @@ author:
 address:
   - code: a
     address: "University of California, Berkeley"
-#csl: trendsjournals.csl
-csl: ecology-letters.csl
 bibliography: refs.bib
-output: 
-  rticles::elsevier_article:
-    keep_tex: true
-  word_document: default
-layout:  3p # review = doublespace, 3p = singlespace, 5p = two-column
-preamble: |
-  \newcommand{\ud}{\mathrm{d}}
-  \usepackage[nomarkers]{endfloat}
-  \journal{Ecology Letters}
-  \linenumbers
-  \usepackage{setspace}
-  \doublespacing
+vignette: >
+    %\VignetteIndexEntry{A worfklow for low-level analyses of scRNA-seq data}
+    %\VignetteEngine{knitr::rmarkdown}
+output: BiocWorkflowTools::f1000_article
+
 abstract: |
   # Archive statement:
   All data (simulated data and code) is made available on GitHub. If accepted, it will be archived with provided DOI in an appropriate scientific data repositoriy.
@@ -95,7 +86,7 @@ labels = as.factor(labels$x)
 **Our data set is comprised of `r dim(simulated_data)[1]`  samples in 
 `r dim(simulated_data)[2]` dimensions.**
 
-<!-- Figure 1: simulated data -->
+<!-- Figure 1: s  fig.cap-->
 ```{r plot_data, echo=FALSE, fig.width=4, fig.height=4}
 colors = c("#e94f37", "#393e41", "#3f88c5")
 names(colors) = levels(labels) 
