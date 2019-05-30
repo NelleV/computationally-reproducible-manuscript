@@ -21,6 +21,10 @@ run_tests() {
     pushd scripts
     make all
     popd
+
+    pushd doc
+    make all
+    popd
 }
 
 # Now get data and run the tests and build the manuscript

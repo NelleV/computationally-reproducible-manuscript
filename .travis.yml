@@ -18,7 +18,7 @@ deploy:
     # Set in the settings page of your repository, as a secure variable
     github-token: $GH_TOKEN  
     keep-history: true
-    local-dir: scripts/reports
+    local-dir: doc/reports
     on:
         branch: master
 
