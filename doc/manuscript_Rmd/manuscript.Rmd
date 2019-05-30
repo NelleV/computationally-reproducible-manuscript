@@ -6,7 +6,6 @@ author:
     email: "nelle.varoquaux@gmail.com"
 address:
   - code: a
-    name: "University of California, Berkeley"
     address: "University of California, Berkeley"
 bibliography: refs.bib
 vignette: >
@@ -15,7 +14,6 @@ vignette: >
 output: BiocWorkflowTools::f1000_article
 
 abstract: |
-  This is a fully computationally reproducible manuscript!
   # Archive statement:
   All data (simulated data and code) is made available on GitHub. If accepted,
   it will be archived with provided DOI in an appropriate scientific data
@@ -78,7 +76,6 @@ labels = as.factor(labels$x)
 **Our data set is comprised of `r dim(simulated_data)[1]`  samples in 
 `r dim(simulated_data)[2]` dimensions.**
 
-<!-- Figure 1: s  fig.cap-->
 ```{r plot_data, echo=FALSE, fig.width=4, fig.height=4}
 colors = c("#e94f37", "#393e41", "#3f88c5")
 names(colors) = levels(labels) 
