@@ -14,27 +14,11 @@ vignette: >
 output: BiocWorkflowTools::f1000_article
 
 abstract: |
+  This is a fully reproducible manuscript!
   # Archive statement:
   All data (simulated data and code) is made available on GitHub. If accepted, it will be archived with provided DOI in an appropriate scientific data repositoriy.
   
   # Keywords: Reproducibility, manuscript 
-
-  # Abstract
-    
-   Something amazing [@noble:quick].     
-  \newpage 
- 
----
-
-<!--
-keywords:
-  - stochasticity
-  - demographic noise
-  - environmental noise
-  - colored noise
-  - quasi-cycles
-  - tipping points
--->
 
 
 ```{r libraries, include=FALSE, message=FALSE, warning=FALSE}
@@ -55,7 +39,7 @@ knitr::opts_chunk$set(
 This manuscript is an entirely computationnaly reproducible manuscript. The
 code and the manuscript is contained in a git repository on GitHub. This git
 repository is organized  following the principles detailed in "A quick guide
-to organizing your computational biology project," [@noble:quick]
+to organizing your computational biology project" [@noble:quick].
 
 
 # Methods
