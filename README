@@ -1,0 +1,34 @@
+# A computationally reproducible manuscript
+
+This git repository contains the code and text for a totally computationally
+reproducible manuscript. It is organized  following the principles detailed in
+"A quick guide to organizing your computational biology project," Noble.
+
+
+- data:
+    Should contain the scripts to download the data (Not demoed).
+- doc:
+    Contains all documents related to the project. In particular,
+    `doc/manuscript_Rmd/manuscript.Rmd` contains the manuscript.
+- scripts:
+    Contains the code. In this very small example, the only code outside of
+    the manuscript is a small script to simulate data.
+- results:
+    Should contain the labnoteboo (Not demoed).
+
+
+Everytime anyone pushes to this repository *or* creates a pull request, the
+code will be ran, and the manuscript will be compiled from scratch.
+
+
+## How does it work?
+
+The code and manuscript are built using travis-CI. In order to do this, I rely
+on a set of R scripts automated through makefile and a bash script and a bash
+script. The first element executed is the makefile in data. For this
+particular project, no external data is needed. Thus, the makefile does
+nothing. The second element executed is the makefile in scripts. This one only
+has one command: it runs the `generate_gaussian_data.R` file, that outputs a
+generated data set. The third element executed is the makefile in doc. This
+Makefile also does only one thing: compiles the file `compile.R`, which itself
+compiles the document manuscript.Rmd
