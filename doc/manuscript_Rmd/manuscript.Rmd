@@ -51,12 +51,12 @@ knitr::opts_chunk$set(
 
 # Introduction
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-in culpa qui officia deserunt mollit anim id est laborum
+
+This manuscript is an entirely computationnaly reproducible manuscript. The
+code and the manuscript is contained in a git repository on GitHub. This git
+repository is organized  following the principles detailed in "A quick guide
+to organizing your computational biology project," [@noble:quick]
+
 
 # Methods
 
@@ -103,5 +103,6 @@ in culpa qui officia deserunt mollit anim id est laborum
 
 # Discussion
 
+CQFD.
 
 # References
