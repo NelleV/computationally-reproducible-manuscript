@@ -45,7 +45,7 @@ knitr::opts_chunk$set(
 # Introduction
 
 
-This manuscript is an entirely computationnaly reproducible manuscript. The
+This manuscript is an entirely computationally reproducible manuscript. The
 code and the manuscript is contained in a git repository on GitHub. This git
 repository is organized  following the principles detailed in "A quick guide
 to organizing your computational biology project" [@noble:quick]. The compiled
