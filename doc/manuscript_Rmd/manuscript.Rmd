@@ -7,9 +7,16 @@ author:
 address:
   - code: a
     address: "University of California, Berkeley"
+author:
+  - name: "Alexandra Paxton"
+    affiliation: b
+    email: "alexandra.paxton@uconn.edu"
+address:
+  - code: b
+    address: "University of Connecticut"
 bibliography: refs.bib
 vignette: >
-    %\VignetteIndexEntry{A worfklow for low-level analyses of scRNA-seq data}
+    %\VignetteIndexEntry{A toy manuscript to demonstrate how to create a computationally reproducible manuscript}
     %\VignetteEngine{knitr::rmarkdown}
 output: BiocWorkflowTools::f1000_article
 
