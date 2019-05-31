@@ -4,12 +4,17 @@ author:
   - name: "Nelle Varoquaux"
     affiliation: a
     email: "nelle.varoquaux@gmail.com"
+  - name: "Alexandra Paxton"
+    affiliation: b
+    email: "alexandra.paxton@uconn.edu"
 address:
   - code: a
     address: "University of California, Berkeley"
+  - code: b
+    address: "University of Connecticut"
 bibliography: refs.bib
 vignette: >
-    %\VignetteIndexEntry{A worfklow for low-level analyses of scRNA-seq data}
+    %\VignetteIndexEntry{A toy manuscript to demonstrate how to create a computationally reproducible manuscript}
     %\VignetteEngine{knitr::rmarkdown}
 output: BiocWorkflowTools::f1000_article
 
@@ -38,7 +43,7 @@ knitr::opts_chunk$set(
 # Introduction
 
 
-This manuscript is an entirely computationnaly reproducible manuscript. The
+This manuscript is an entirely computationally reproducible manuscript. The
 code and the manuscript is contained in a git repository on GitHub. This git
 repository is organized  following the principles detailed in "A quick guide
 to organizing your computational biology project" [@noble:quick]. The compiled
@@ -47,6 +52,9 @@ version of the manuscript can be found
 The Github repository containing the manuscript can be found
 [here](http://github.com/NelleV/computationally-reproducible-manuscript).
 
+This manuscript was created as an exercise of the git skills that we have learned
+over the past few days and as a demonstration of how those skills can be used
+to improve scientific workflows.
 
 # Methods
 
@@ -73,7 +81,7 @@ labels = read.table("../../scripts/simulating_data/results/labels.csv")
 labels = as.factor(labels$x)
 ```
 
-**Our data set is comprised of `r dim(simulated_data)[1]`  samples in 
+**Our data set comprises `r dim(simulated_data)[1]`  samples in 
 `r dim(simulated_data)[2]` dimensions.**
 
 ```{r plot_data, echo=FALSE, fig.width=4, fig.height=4}
