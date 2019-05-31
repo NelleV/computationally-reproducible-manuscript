@@ -80,7 +80,7 @@ labels = read.table("../../scripts/simulating_data/results/labels.csv")
 labels = as.factor(labels$x)
 ```
 
-**Our data set is comprised of `r dim(simulated_data)[1]`  samples in 
+**Our data set comprises `r dim(simulated_data)[1]`  samples in 
 `r dim(simulated_data)[2]` dimensions.**
 
 ```{r plot_data, echo=FALSE, fig.width=4, fig.height=4}
