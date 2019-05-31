@@ -17,7 +17,7 @@ reproducible manuscript. It is organized  following the principles detailed in
     Should contain the labnoteboo (Not demoed).
 
 
-Everytime anyone pushes to this repository *or* creates a pull request, the
+Every time anyone pushes to this repository *or* creates a pull request, the
 code will be ran, and the manuscript will be compiled from scratch.
 
 
