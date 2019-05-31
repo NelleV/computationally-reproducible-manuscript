@@ -32,3 +32,5 @@ if(!dir.exists(output_dir)){
 write.table(labels, file.path(output_dir, "labels.csv"))
 write.table(centroids, file.path(output_dir, "centroids.csv"))
 write.table(simulated_data, file.path(output_dir, "data.csv"))
+
+This line is not meaningful
