@@ -4,14 +4,12 @@ author:
   - name: "Nelle Varoquaux"
     affiliation: a
     email: "nelle.varoquaux@gmail.com"
-address:
-  - code: a
-    address: "University of California, Berkeley"
-author:
   - name: "Alexandra Paxton"
     affiliation: b
     email: "alexandra.paxton@uconn.edu"
 address:
+  - code: a
+    address: "University of California, Berkeley"
   - code: b
     address: "University of Connecticut"
 bibliography: refs.bib
