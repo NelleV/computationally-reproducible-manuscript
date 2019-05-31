@@ -2,7 +2,7 @@ library(stats)
 
 ###############################################################################
 # Set some options for the data generation
-random_seed = 42
+random_seed = 43
 n_clusters = 3
 n_samples = 300
 dimensions = 2
