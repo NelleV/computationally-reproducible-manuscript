@@ -54,6 +54,9 @@ version of the manuscript can be found
 The Github repository containing the manuscript can be found
 [here](http://github.com/NelleV/computationally-reproducible-manuscript).
 
+This manuscript was created as an exercise of the git skills that we have learned
+over the past few days and as a demonstration of how those skills can be used
+to improve scientific workflows.
 
 # Methods
 
